@@ -6,13 +6,5 @@ pipeline{
         echo 'Starting'
       }
     } 
-    stage('Compiling'){
-      steps{
-        sh 'javac Start.java'
-      }
-    }
-    stage('Testing'){
-      sh 'java Start'
-    }
   }
 }
